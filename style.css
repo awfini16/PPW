@@ -1,0 +1,103 @@
+/* Reset dan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  padding: 30px;
+  color: #333;
+}
+
+/* Container utama */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Kolom kiri: materi */
+.left {
+  flex: 2;
+  padding: 30px;
+  background-color: #e8f5e9;
+  border-right: 1px solid #ccc;
+}
+
+.left h2 {
+  font-size: 28px;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.left h3 {
+  font-size: 22px;
+  color: #388e3c;
+  margin-bottom: 20px;
+}
+
+.left h4 {
+  font-size: 18px;
+  margin-top: 25px;
+  color: #1b5e20;
+}
+
+.left p {
+  margin-top: 8px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Kolom kanan: profil */
+.right {
+  flex: 1;
+  padding: 30px;
+  background-color: #fce4ec;
+}
+
+.right h2 {
+  font-size: 24px;
+  color: #ad1457;
+  margin-bottom: 20px;
+}
+
+.right p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.right a {
+  color: #d81b60;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.right a:hover {
+  text-decoration: underline;
+}
+
+/* Foto profil */
+.foto {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+/* Gambar Turnitin */
+.right img {
+  display: block;
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
