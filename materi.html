@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materi Web Mining</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffe4e1, #ffccd5); /* pink gradient */
+      color: #3d3d3d;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    nav {
+      width: 220px;
+      background: #f0fff4; /* soft green pastel */
+      padding: 20px;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+    }
+
+    nav h2 {
+      color: #88b04b; /* sage green */
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    nav a {
+      display: block;
+      margin: 12px 0;
+      text-decoration: none;
+      color: #d63384; /* pink accent */
+      font-weight: bold;
+      padding: 8px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #ffe6f0; /* light pink hover */
+    }
+
+    .main-content {
+      flex-grow: 1;
+      padding: 30px;
+    }
+
+    header {
+      background: #88b04b; /* sage green */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff0f5; /* soft pink content box */
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .profile-pic {
+      width: 200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .bio {
+      background: #f0fff4;
+      padding: 12px;
+      border-left: 6px solid #88b04b;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .bio p {
+      margin: 8px 0;
+    }
+
+    .muted {
+      color: #6c757d;
+      font-size: 0.9em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #555;
+      background: #ffe4e1;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
+      border-radius: 0 0 12px 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <img src="pp.jpg" alt="Foto Profil" class="profile-pic">
+    <h2>Menu</h2>
+    <a href="index.html">Profil</a>
+    <a href="materi.html">Materi Web Mining</a>
+    <a href="menu.html">Menu crawling</a>
+
+  </nav>
+
+  <div class="main-content">
+    <header>
+      <h3>📚 Materi Pengantar Web Mining</h3>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>1. Pengantar Web Mining</h2>
+        <p>Web mining merupakan pendekatan analitis yang memanfaatkan data dari internet untuk menemukan pola tersembunyi dan informasi yang relevan. Dengan memadukan teknik dari data mining dan kecerdasan buatan, web mining membantu memahami perilaku pengguna, struktur situs, dan isi konten digital secara lebih mendalam. Proses ini sangat berguna dalam pengambilan keputusan berbasis data, baik untuk bisnis maupun riset akademik.</p>
+      </section>
+
+      <section>
+        <h2>2. Web Crawling</h2>
+        <p>Web crawling adalah proses otomatis yang dilakukan oleh program khusus untuk menjelajahi halaman-halaman situs dan mengumpulkan data. Bot ini bekerja dengan mengikuti tautan dari satu laman ke laman lain, mirip seperti cara manusia berselancar di internet, namun jauh lebih cepat dan sistematis. Informasi yang dikumpulkan kemudian digunakan untuk keperluan indeksasi atau analisis konten.</p>
+      </section>
+
+      <section>
+        <h2>3. Web Data Preprocessing</h2>
+        <p>Sebelum data web dapat dianalisis, diperlukan tahap pembersihan dan penyesuaian agar data menjadi lebih terstruktur. Proses ini mencakup penghapusan elemen HTML, normalisasi teks, serta pengolahan kata-kata agar lebih siap digunakan dalam model analitik. Tahapan ini sangat krusial karena kualitas data awal sangat memengaruhi hasil akhir dari proses mining.</p>
+      </section>
+
+      <section>
+        <h2>4. Supervised Learning</h2>
+        <p>Metode ini melibatkan pelatihan algoritma menggunakan data yang sudah memiliki label atau kategori. Tujuannya adalah agar sistem dapat mengenali pola dan membuat prediksi berdasarkan data baru. Dalam konteks web mining, supervised learning sering digunakan untuk klasifikasi konten, deteksi spam, atau analisis sentimen pengguna.</p>
+      </section>
+
+      <section>
+        <h2>5. Unsupervised Learning</h2>
+        <p>Berbeda dari pendekatan sebelumnya, unsupervised learning bekerja tanpa data berlabel. Algoritma mencoba menemukan struktur atau kelompok dalam data secara mandiri. Teknik ini sangat berguna untuk segmentasi pengguna, pengelompokan dokumen, atau identifikasi pola akses yang tidak terlihat secara langsung.</p>
+      </section>
+
+      <section>
+        <h2>6. Web Content Mining</h2>
+        <P>Analisis konten web berfokus pada isi teks yang terdapat dalam halaman situs. Dengan menggunakan teknik seperti ekstraksi informasi dan pemodelan topik, sistem dapat memahami tema utama, opini pengguna, atau entitas penting yang disebutkan dalam teks. Ini sangat berguna untuk aplikasi seperti sistem rekomendasi atau analisis berita.</P>
+      </section>
+
+      <section>
+        <h2>7. Web Usage Mining</h2>
+        <p>Penggalian data penggunaan web bertujuan memahami bagaimana pengguna berinteraksi dengan situs. Data seperti klik, waktu kunjungan, dan jalur navigasi dianalisis untuk mengidentifikasi kebiasaan dan preferensi. Hasilnya dapat digunakan untuk meningkatkan pengalaman pengguna atau menyusun strategi pemasaran yang lebih tepat sasaran.</p>
+      </section>
+
+      <section>
+        <h2>8. Web Structure Mining</h2>
+        <p>Struktur web yang terdiri dari tautan antar halaman dapat dianalisis menggunakan pendekatan graf. Dengan memetakan hubungan antar laman, sistem dapat menentukan halaman yang paling berpengaruh atau menemukan komunitas dalam jaringan web. Teknik ini banyak digunakan dalam pengembangan mesin pencari dan analisis jaringan sosial.</p>
+      </section>
+
+      <section>
+        <h2>9. Deployment System</h2>
+        <p>Tahap akhir dari proses web mining adalah penerapan hasil analisis ke dalam sistem nyata. Ini bisa berupa integrasi ke aplikasi web, pembuatan dashboard interaktif, atau pengembangan fitur cerdas seperti chatbot. Keberhasilan deployment bergantung pada kemampuan teknis dan pemahaman kebutuhan pengguna akhir.</p>
+      </section>
+    </div>
+
+    <footer>
+      "Ilmu itu bukan untuk disimpan, tapi untuk dibagikan dan dimanfaatkan."  
+      <br>© 2025 Awfini Hilma
+    </footer>
+  </div>
+
+</body>
+</html>
