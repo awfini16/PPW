@@ -1,52 +1,137 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>PPW - Web Mining</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        ul {
-            line-height: 1.8;
-        }
-        a {
-            text-decoration: none;
-            color: #0077cc;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil & Tugas - Pengantar Web Mining</title>
+  <style>
+    :root{
+      --bg: #ffffff;
+      --panel: #f6f7fb;
+      --text: #0f172a;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --shadow: 0 10px 20px rgba(0,0,0,.05);
+      --accent: #2563eb;
+      --accent-light: #dbeafe;
+    }
+    body{
+      margin:0; font-family: Arial, Helvetica, sans-serif;
+      background:var(--bg); color:var(--text);
+      display:grid; grid-template-columns: 280px 1fr; min-height:100vh;
+    }
+    aside{
+      background:var(--panel); border-right:1px solid var(--border);
+      padding:28px 20px; position:sticky; top:0; height:100vh; overflow:auto;
+    }
+    main{ padding:24px; }
+    .brand{ font-size:32px; font-weight:600; margin-bottom:28px; color:var(--accent); }
+    .section-title{ font-size:14px; letter-spacing:.1em; color:var(--muted); margin:16px 0 8px; }
+    .nav{ list-style:none; padding:0; margin:0; }
+    .nav a{ display:block; padding:8px 12px; border-radius:8px; text-decoration:none; color:var(--text); }
+    .nav a:hover{ background:var(--accent-light); color:var(--accent); }
+
+    h1{ font-size:36px; margin:10px 0 20px; font-weight:600; color:var(--accent); }
+    section{
+      background:var(--panel); border:1px solid var(--border); border-radius:12px; box-shadow:var(--shadow);
+      padding:24px; margin-bottom:20px;
+    }
+    section h2{ margin-top:0; color:var(--accent); }
+    .muted{ color:var(--muted); }
+    .profile-pic{
+      width: 100%;
+      max-width: 250px;
+      border-radius: 12px;
+      display:block;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow);
+    }
+    .bio {
+      background: var(--accent-light);
+      border-left: 6px solid var(--accent);
+      padding: 16px;
+      border-radius: 8px;
+    }
+    .bio p {
+      margin: 6px 0;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>PPW</h1>
-        <p>Materi ringkasan pengantar web mining mata kuliah Pencarian Dan Penambangan Web (PPW)</p>
-        
-        <h2>Daftar File</h2>
-        <ul>
-            <li><a href="ppw1.html">Materi Lengkap (ppw1.html)</a></li>
-            <li><a href="README.md">README.md</a></li>
-            <li><a href="crawling_1.ipynb">Notebook Crawling (crawling_1.ipynb)</a></li>
-            <li><a href="hasil.png">Hasil (hasil.png)</a></li>
-            <li><a href="pp.jpg">Gambar (pp.jpg)</a></li>
-            <li><a href="style.css">Style CSS (style.css)</a></li>
-            <li><a href="tugas ppw.docx">Dokumen Tugas (tugas ppw.docx)</a></li>
-        </ul>
+  <aside>
+    <h2 class="brand">Foto</h2>
+    <img src="profile.jpeg" alt="Foto Profil" class="profile-pic">
+    <div class="section">
+      <div class="section-title">TUGAS</div>
+      <ul class="nav">
+        <li><a href="index.html">Pengantar Web Mining</a></li>
+        <li><a href="crawl.html">Crawl Data</a></li> <!-- link ke file kedua -->
+      </ul>
     </div>
+  </aside>
+
+  <main>
+    <h1>Profile</h1>
+
+    <section>
+      <h2>Cerita Saya</h2>
+      <p>Nama saya Mukti Hendra Buana, biasa dipanggil Mukti. Di rumah saya sering dipanggil Tio, sedangkan di organisasi memiliki julukan Gondrong. Saya lahir di Pare, Kediri pada 24 Oktober 2004. 
+              Pendidikan saya ditempuh di Surabaya, mulai dari SDN 59, SMPN 2, SMKN 2, dan saat ini saya sedang menempuh studi S1 di UTM. 
+              Saat ini saya tinggal di Surabaya, tepatnya di dekat Pelabuhan Ujung. Waktu luang biasanya saya habiskan dengan membaca dan mendengarkan musik. 
+              Saya menyukai bacaan dengan genre misteri, komedi, dan fantasi. Untuk musik, saya menikmati berbagai genre, seperti pop-punk, emo, metalcore, hardcore, reggae, ska, hingga midwest emo</p>
+      <div class="bio">
+        <p><strong>Nama:</strong> Mukti Hendra Buana</p>
+        <p><strong>NIM:</strong> 220411100071</p>
+        <p><strong>Email:</strong> tiomukti2424@gmail.com</p>
+      </div>
+      <a href="https://tiok24.github.io/ppw/turnitin-report.pdf"><p class="muted">Hasil dicek dengan turnitin</p></a>
+    </section>
+
+
+    <section>
+      <h2>Pengantar Web Mining</h2>
+      <p>Web mining adalah bidang yang menggabungkan teknik data mining dengan sumber daya web untuk menemukan pola, informasi penting, atau pengetahuan baru dari data yang sangat besar di internet. Karena web berisi berbagai macam data seperti teks, gambar, grafik, hingga log aktivitas pengguna, web mining membantu dalam memahami isi, struktur, serta perilaku pengguna untuk mendukung pengambilan keputusan atau meningkatkan layanan digital.</p>
+    </section>
+
+    <section>
+      <h2>Web Crawling</h2>
+      <p>Web crawling merupakan proses otomatis dalam menjelajahi dan mengambil data dari berbagai halaman web menggunakan program yang disebut <i>crawler</i> atau <i>spider</i>. Teknik ini berfungsi untuk mengumpulkan data mentah dalam skala besar sebagai bahan awal analisis, misalnya untuk membangun mesin pencari atau sistem rekomendasi.</p>
+    </section>
+
+    <section>
+      <h2>Web Data Preprocessing</h2>
+      <p>Web data preprocessing adalah tahap membersihkan, merapikan, dan mempersiapkan data web sebelum dianalisis. Proses ini meliputi pembersihan duplikasi, mengatasi data yang tidak lengkap, normalisasi format, serta transformasi agar data lebih terstruktur sehingga siap dipakai dalam metode pembelajaran mesin atau analisis lanjutan.</p>
+    </section>
+
+    <section>
+      <h2>Pembelajaran Terawasi (Supervised Learning)</h2>
+      <p>Supervised learning adalah metode pembelajaran mesin yang menggunakan data berlabel, artinya setiap data sudah memiliki jawaban atau target yang benar. Algoritma ini belajar dari hubungan antara input dan output sehingga mampu membuat prediksi pada data baru, contohnya dalam klasifikasi email spam atau prediksi harga.</p>
+    </section>
+
+    <section>
+      <h2>Pembelajaran Tak Terawasi (Unsupervised Learning)</h2>
+      <p>Unsupervised learning berbeda dengan supervised karena tidak memerlukan label dalam datanya. Algoritma ini digunakan untuk menemukan pola tersembunyi, pengelompokan, atau asosiasi di dalam data tanpa informasi jawaban, misalnya dalam segmentasi pengguna atau analisis keranjang belanja.</p>
+    </section>
+
+    <section>
+      <h2>Web Content Mining (Text Mining)</h2>
+      <p>Web content mining berfokus pada penggalian informasi dari isi halaman web, terutama teks, gambar, dan multimedia. Pada praktiknya, text mining sering digunakan untuk menganalisis opini, melakukan ekstraksi kata kunci, serta memahami topik atau tren dari konten web dalam jumlah besar.</p>
+    </section>
+
+    <section>
+      <h2>Web Usage Mining</h2>
+      <p>Web usage mining adalah analisis terhadap data perilaku pengguna ketika berinteraksi dengan website, biasanya bersumber dari log server, cookie, atau klik pengguna. Tujuannya adalah menemukan pola akses sehingga dapat dipakai untuk meningkatkan pengalaman pengguna, personalisasi konten, maupun strategi pemasaran.</p>
+    </section>
+
+    <section>
+      <h2>Web Structure Mining (Graph Mining)</h2>
+      <p>Web structure mining memanfaatkan struktur hyperlink yang menghubungkan halaman-halaman web. Dengan pendekatan graf, hubungan antar-halaman dapat dipetakan dan dianalisis, misalnya untuk mengukur tingkat kepentingan sebuah halaman seperti yang dilakukan pada algoritma PageRank di mesin pencari.</p>
+    </section>
+
+    <section>
+      <h2>Deployment System</h2>
+      <p>Deployment system adalah tahap penerapan hasil web mining ke dalam sistem nyata agar dapat dimanfaatkan secara langsung. Pada tahap ini, model atau temuan analisis diintegrasikan dengan aplikasi atau layanan, sehingga memberikan manfaat praktis seperti rekomendasi produk, sistem pencarian cerdas, atau deteksi penipuan online.</p>
+    </section>
+  </main>
 </body>
 </html>
