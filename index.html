@@ -1,83 +1,140 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Profil Rahel</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil Awfini Hilma</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffe4e1, #ffccd5); /* pink gradient */
+      color: #3d3d3d;
       display: flex;
+      min-height: 100vh;
     }
-    .sidebar {
-      width: 250px;
-      background-color: #f0f0f0;
+
+    nav {
+      width: 220px;
+      background: #f0fff4; /* soft green pastel */
       padding: 20px;
-      text-align: center;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.05);
     }
-    .sidebar img {
-      width: 150px;
-      border-radius: 10px;
-      margin-bottom: 10px;
+
+    nav h2 {
+      color: #88b04b; /* sage green */
+      margin-bottom: 20px;
+      font-size: 20px;
     }
-    .sidebar nav a {
+
+    nav a {
       display: block;
-      margin: 10px 0;
+      margin: 12px 0;
       text-decoration: none;
-      color: #333;
+      color: #d63384; /* pink accent */
       font-weight: bold;
+      padding: 8px;
+      border-radius: 6px;
+      transition: 0.3s;
     }
-    .content {
+
+    nav a:hover {
+      background: #ffe6f0; /* light pink hover */
+    }
+
+    .main-content {
       flex-grow: 1;
       padding: 30px;
     }
-    .content h2 {
-      margin-top: 0;
+
+    header {
+      background: #88b04b; /* sage green */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    .nav-links {
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff0f5; /* soft pink content box */
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .profile-pic {
+      width: 200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .bio {
+      background: #f0fff4;
+      padding: 12px;
+      border-left: 6px solid #88b04b;
+      border-radius: 8px;
       margin-top: 20px;
     }
-    .nav-links a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: blue;
+
+    .bio p {
+      margin: 8px 0;
     }
-    footer {
-      margin-top: 40px;
+
+    .muted {
+      color: #6c757d;
       font-size: 0.9em;
-      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #555;
+      background: #ffe4e1;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
+      border-radius: 0 0 12px 12px;
     }
   </style>
 </head>
 <body>
-  <div class="sidebar">
-    <img src="pp.jpg" alt="Foto Profil">
-    <nav>
-      <a href="#intro">Introduction</a>
-      <a href="#pengantar">Pengantar</a>
-      <a href="#crawling">Crawling Data</a>
-    </nav>
-  </div>
 
-  <div class="content">
-    <h2 id="intro">Introduction</h2>
-    <p><strong>Nama:</strong> Rahel Syalom Elisabeth Manalu</p>
-    <p><strong>NIM:</strong> 23-032</p>
-    <p><strong>Alamat:</strong> Hayo tebak</p>
-    <p><strong>Email:</strong> rahels4@gmail.com</p>
-    <p><strong>Nomor:</strong> 08131471729</p>
-    <p><strong>Status:</strong> not have status</p>
+  <nav>
+    <img src="pp.jpg" alt="Foto Profil" class="profile-pic">
+    <h2>Menu</h2>
+    <a href="index.html">Profil</a>
+    <a href="materi.html">Materi Web Mining</a>
+    <a href="menu.html">Menu crawling</a>
 
-    <div class="nav-links">
-      <a href="#pengantar">Next</a>
-      <a href="#intro">Previous</a>
+  </nav>
+
+  <div class="main-content">
+    <header>
+      <h3> Profil Awfini Hilma </h3>
+    </header>
+
+    <div class="container">
+      <h2> Cerita Saya</h2>
+      <p>Panggilan nama saya Hilma, lahir di Sumenep pada 16 Desember 2003. Saya berasal dari Kepulauan Kangean dan memiliki hobi berenang. Saya anak ke-2 dari 4 bersaudara. Pendidikan saya dimulai dari TK AL-Hidayah, SDN Arjasa 1, MTS AL-Hidayah, lalu melanjutkan ke MA Nurul Jadid di Probolinggo dan kini kuliah di Universitas Trunojoyo Madura.</p>
+
+      <div class="bio">
+        <p><strong>Nama:</strong> Awfini Hilma</p>
+        <p><strong>NIM:</strong> 220411100190</p>
+        <p><strong>Email:</strong> awfinihilma@gmail.com</p>
+      </div>
+
     </div>
 
     <footer>
-      By Rahel Syalom Elisabeth Manalu (23-032) © Copyright 2023
+      "Belajar bukan tentang tahu segalanya, tapi tentang berani mencoba dan terus berkembang."  
+      <br>© 2025 Awfini Hilma
     </footer>
   </div>
+
 </body>
 </html>
