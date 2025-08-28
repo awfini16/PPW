@@ -2,90 +2,82 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Introduction - Awfini Hilma</title>
+  <title>Profil Rahel</title>
   <link rel="stylesheet" href="style.css">
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #111;
-      color: #fff;
-    }
-    .container {
+      padding: 0;
       display: flex;
-      min-height: 100vh;
     }
     .sidebar {
-      width: 280px;
-      background-color: #1a1a1a;
+      width: 250px;
+      background-color: #f0f0f0;
       padding: 20px;
-      box-sizing: border-box;
+      text-align: center;
     }
     .sidebar img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 20px;
+      width: 150px;
+      border-radius: 10px;
+      margin-bottom: 10px;
     }
     .sidebar nav a {
       display: block;
-      color: #ccc;
-      text-decoration: none;
       margin: 10px 0;
+      text-decoration: none;
+      color: #333;
       font-weight: bold;
     }
-    .sidebar nav a.active {
-      color: #fff;
+    .content {
+      flex-grow: 1;
+      padding: 30px;
     }
-    .main {
-      flex: 1;
-      padding: 40px;
+    .content h2 {
+      margin-top: 0;
     }
-    .main h1 {
-      font-size: 32px;
-      margin-bottom: 20px;
+    .nav-links {
+      margin-top: 20px;
     }
-    .main p {
-      margin: 10px 0;
-      line-height: 1.6;
-    }
-    .main a {
-      color: #4ea1ff;
+    .nav-links a {
+      margin-right: 15px;
       text-decoration: none;
+      color: blue;
     }
     footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      background-color: #1a1a1a;
-      color: #aaa;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <img src="pp.jpg" alt="Foto Awfini Hilma">
-      <nav>
-        <a href="#" class="active">Introduction</a>
-        <a href="#">Pengantar</a>
-        <a href="#">Crawling Data</a>
-      </nav>
-    </aside>
-    <main class="main">
-      <h1>Introduction</h1>
-      <p><strong>Nama:</strong> Awfini Hilma</p>
-      <p><strong>NIM:</strong> 220411100190</p>
-      <p><strong>Alamat:</strong> Kepulauan Kangean, Sumenep</p>
-      <p><strong>Email:</strong> <a href="mailto:awfinihilma@gmail.com">awfinihilma@gmail.com</a></p>
-      <p><strong>Nomor:</strong> 0813xxxxxxx</p>
-      <p><strong>Status:</strong> Mahasiswa aktif</p>
-      <p><strong>Cerita saya:</strong> Saya berasal dari kepulauan Kangean, anak ke-2 dari 4 bersaudara. Sejak kecil saya suka berenang di laut dekat rumah. Pendidikan saya dimulai dari TK AL-Hidayah, SDN Arjasa 1, MTS AL-Hidayah, lalu melanjutkan ke MA Nurul Jadid di Probolinggo, dan kini kuliah di Universitas Trunojoyo Madura.</p>
-      <p><strong>Hasil Turnitin:</strong> <a href="#">Klik di sini</a></p>
-      <img src="hasil.png" alt="Hasil Turnitin" style="width: 200px; margin-top: 10px;">
-    </main>
+  <div class="sidebar">
+    <img src="pp.jpg" alt="Foto Profil">
+    <nav>
+      <a href="#intro">Introduction</a>
+      <a href="#pengantar">Pengantar</a>
+      <a href="#crawling">Crawling Data</a>
+    </nav>
   </div>
-  <footer>
-    By Awfini Hilma (220411100190) &copy; 2025
-  </footer>
+
+  <div class="content">
+    <h2 id="intro">Introduction</h2>
+    <p><strong>Nama:</strong> Rahel Syalom Elisabeth Manalu</p>
+    <p><strong>NIM:</strong> 23-032</p>
+    <p><strong>Alamat:</strong> Hayo tebak</p>
+    <p><strong>Email:</strong> rahels4@gmail.com</p>
+    <p><strong>Nomor:</strong> 08131471729</p>
+    <p><strong>Status:</strong> not have status</p>
+
+    <div class="nav-links">
+      <a href="#pengantar">Next</a>
+      <a href="#intro">Previous</a>
+    </div>
+
+    <footer>
+      By Rahel Syalom Elisabeth Manalu (23-032) © Copyright 2023
+    </footer>
+  </div>
 </body>
 </html>
